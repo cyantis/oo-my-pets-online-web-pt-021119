@@ -60,7 +60,6 @@ class Owner
         d.mood = "nervous"
       end
     end
-    #self.class.reset_all
     pets.clear
   end
 
