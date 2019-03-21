@@ -59,8 +59,8 @@ class Owner
       a.each do |d|
         d.mood = "nervous"
       end
-      self.class.reset_all
     end
+    self.class.reset_all
   end
 
   def list_pets
