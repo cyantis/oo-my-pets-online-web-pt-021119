@@ -60,7 +60,11 @@ class Owner
   end
 
   def sell_pets
-    self.pets[:fishes].each {|f| f.mood = "nervous"}
+    self.pets.each do |p|
+      p.each do |a|
+        a.mood = "nervous"
+      end
+    end
   end
 
   def list_pets
