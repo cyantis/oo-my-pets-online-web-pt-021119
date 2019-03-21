@@ -43,8 +43,7 @@ class Owner
   end
 
   def buy_dog(dog)
-    new_dog = Dog.new(dog)
-    self.pets[:dogs] << new_dog
+    self.pets[:dogs] << Dog.new(dog)
   end
 
   def walk_dogs
@@ -60,8 +59,8 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do |p|
-      p.each do |a|
+    self.pets.each do |p, d|
+      d.each do |a|
         a.mood = "nervous"
       end
     end
